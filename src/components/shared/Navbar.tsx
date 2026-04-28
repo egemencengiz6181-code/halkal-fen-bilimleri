@@ -99,7 +99,7 @@ export default function Navbar() {
 
   return (
     <>
-    <header className="fixed top-0 left-0 right-0 z-50 w-full px-6 md:px-12 py-5 flex items-center justify-between pointer-events-none">
+    <header className="fixed top-0 left-0 right-0 z-50 w-full px-6 md:px-12 py-4 md:py-5 flex items-center justify-between pointer-events-none bg-white/[0.82] backdrop-blur-[25px] border-b border-black/[0.06] dark:bg-black/60 dark:border-white/[0.05] md:bg-transparent md:border-transparent">
       {/* Logo - Sol Taraf */}
       <div className="pointer-events-auto w-[200px] md:w-[260px] flex items-center">
         <Link href="/" className="flex items-center">
@@ -116,7 +116,7 @@ export default function Navbar() {
 
       {/* Nav Linkleri - Orta Kısım (sadece desktop) */}
       <div className="pointer-events-auto hidden md:flex flex-col items-center">
-        <div className="flex items-center gap-1 bg-black/5 dark:bg-white/5 border border-black/10 dark:border-white/10 backdrop-blur-lg py-1 px-1 rounded-full shadow-lg relative max-w-fit">
+        <div className="flex items-center gap-1 bg-white/70 dark:bg-black/55 border border-white/40 dark:border-white/10 backdrop-blur-xl py-1 px-1 rounded-full shadow-lg shadow-black/5 relative max-w-fit">
           {navItems.map((item) => {
             const isActive = activeTab === item.name
 
@@ -131,7 +131,8 @@ export default function Navbar() {
                   href={item.url}
                   className={cn(
                     "relative cursor-pointer text-sm font-semibold px-6 py-2 rounded-full transition-colors flex items-center gap-2",
-                    "text-black/60 hover:text-black dark:text-white/60 dark:hover:text-white",
+                    "[text-shadow:0px_1px_3px_rgba(0,0,0,0.15)] dark:[text-shadow:0px_2px_5px_rgba(0,0,0,0.7)]",
+                    "text-black/70 hover:text-black dark:text-white/80 dark:hover:text-white",
                     isActive && "text-black dark:text-white"
                   )}
                 >
@@ -177,7 +178,7 @@ export default function Navbar() {
               transition={{ duration: 0.18 }}
               onMouseEnter={() => openMenu(servicesLabel)}
               onMouseLeave={() => closeMenu()}
-              className="absolute top-full mt-3 w-[640px] p-6 bg-background/95 border border-black/10 dark:border-white/10 backdrop-blur-2xl rounded-[32px] shadow-2xl z-50"
+              className="absolute top-full mt-3 w-[640px] p-6 bg-white/[0.93] dark:bg-[#0a0a0f]/[0.93] border border-black/[0.08] dark:border-white/[0.10] backdrop-blur-[30px] rounded-[32px] shadow-2xl shadow-black/10 z-50"
             >
               <div className="grid grid-cols-2 gap-4">
                 {services.map((service) => (
@@ -235,7 +236,7 @@ export default function Navbar() {
           animate={{ opacity: 1, x: 0 }}
           exit={{ opacity: 0, x: "100%" }}
           transition={{ type: "spring", stiffness: 260, damping: 30 }}
-          className="fixed inset-0 z-40 flex flex-col bg-[#f4f4f8] dark:bg-[#0a0a0f] backdrop-blur-2xl md:hidden"
+          className="fixed inset-0 z-40 flex flex-col bg-white/95 dark:bg-[#06060a]/[0.97] backdrop-blur-[30px] md:hidden"
         >
           {/* Üst bar */}
           <div className="flex items-center justify-between px-6 py-5 border-b border-black/10 dark:border-white/10">
