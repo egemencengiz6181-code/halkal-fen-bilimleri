@@ -47,7 +47,7 @@ export default function HeroMain() {
       {/* ── SCHOOL IMAGE BACKGROUND ──────────────────────────── */}
       <div className="absolute inset-0 z-[1] overflow-hidden">
         <Image
-          src="/okul/okul.jpeg"
+          src="/okul2/okul2.jpg"
           alt=""
           fill
           className="object-cover object-center opacity-[0.08]"

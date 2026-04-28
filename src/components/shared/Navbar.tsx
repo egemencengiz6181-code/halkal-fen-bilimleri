@@ -104,11 +104,11 @@ export default function Navbar() {
       <div className="pointer-events-auto w-[200px] md:w-[260px] flex items-center">
         <Link href="/" className="flex items-center">
           <Image 
-                      src="/logos/Fen%20bilimleri%20logo.png" 
+            src="/logos/logolar.png" 
             alt="Halkalı Fen Bilimleri Dershanesi" 
             width={240} 
             height={72} 
-            className="h-[64px] md:h-[80px] w-auto object-contain"
+            className="h-[52px] md:h-[64px] w-auto object-contain max-w-[160px] md:max-w-[200px]"
             priority
           />
         </Link>
@@ -241,11 +241,11 @@ export default function Navbar() {
           <div className="flex items-center justify-between px-6 py-5 border-b border-black/10 dark:border-white/10">
             <Link href="/" onClick={() => setIsMobileOpen(false)}>
               <Image
-                src="/logos/Fen%20bilimleri%20logo.png"
+                src="/logos/logolar.png"
                 alt="Halkalı Fen Bilimleri Dershanesi"
                 width={200}
                 height={60}
-                className="h-[56px] w-auto object-contain"
+                className="h-[48px] w-auto object-contain max-w-[160px]"
                 priority
               />
             </Link>

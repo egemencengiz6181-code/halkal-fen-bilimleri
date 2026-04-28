@@ -132,11 +132,11 @@ export default function HoverFooter() {
           <div className="space-y-6">
             <Link href="/" className="inline-block pointer-events-auto">
               <Image
-                src="/logos/Fen%20bilimleri%20logo.png"
+                src="/logos/logolar.png"
                 alt="Halkalı Fen Bilimleri Dershanesi"
                 width={180}
                 height={60}
-                className="h-16 w-auto object-contain"
+                className="h-14 w-auto object-contain"
               />
             </Link>
             <p className="text-sm text-slate-500 dark:text-white/30 leading-relaxed max-w-xs">

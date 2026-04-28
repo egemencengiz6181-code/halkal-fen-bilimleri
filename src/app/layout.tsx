@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     googleBot: { index: true, follow: true },
   },
   icons: {
-    icon: '/logos/Fen%20bilimleri%20logo.png',
+    icon: '/logos/logolar.png',
   },
   openGraph: {
     type: 'website',

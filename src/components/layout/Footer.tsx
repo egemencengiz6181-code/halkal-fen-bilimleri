@@ -46,11 +46,11 @@ export default function Footer() {
           <div className="space-y-8 col-span-1 lg:col-span-1">
             <Link href="/" className="inline-block">
               <Image 
-                src="/logos/Fen%20bilimleri%20logo.png" 
+                src="/logos/logolar.png" 
                 alt="Halkalı Fen Bilimleri" 
                 width={200} 
                 height={80} 
-                className="h-20 w-auto object-contain"
+                className="h-16 w-auto object-contain"
               />
             </Link>
             <p className="text-foreground/40 font-light leading-relaxed max-w-xs">
